@@ -22,5 +22,5 @@ m_pound = pound_gram_convertor(m_pound)
 m_lots= float(input("Enter a mass in lots: "))
 m_lots = lots_gram_convertor(m_lots)
 sum = (m_talent+m_pound+m_lots)/1000
-print("The sum is", int( sum), "kilograms and" ,sum%1, "gram")
+print("The sum is", int( sum), "kilograms and" ,f"{(sum%1)*1000:10.2f}", "gram")
 
