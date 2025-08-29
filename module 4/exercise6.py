@@ -11,5 +11,20 @@
 # Let n be the total number of points that fall inside circle A. Now we have n/N≈π/4, and from that we get π≈4n/N.
 # Write a program that asks the user how many random points to generate, and then calculates the approximate value of pi using the method explained above.
 # At the end, the program prints out the approximation of pi to the user.
-# (Notice that it is easy to test if a point falls inside circle A by testing if it fulfills the inequation x^2+y^2<1.).
+# (Notice that it is easy to test if a point falls inside circle A by testing if it fulfills the inequation x^2+y^2<1.)
+
+import random
+N = 1000
+n=0
+for i in range(N):
+    pointx = random.uniform(-1, 1)
+    pointy = random.uniform (-1, 1)
+    if pointx**2 + pointy**2 < 1:
+        n += 1
+
+pi= (n/N) *4
+print("pi is approximately ", pi)
+
+
+
 
