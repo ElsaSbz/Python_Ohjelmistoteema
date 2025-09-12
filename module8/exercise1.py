@@ -2,9 +2,9 @@
 
 import mysql.connector
 def airport(icao):
-    sql = f"SELECT name, municipality FROM airport WHERE ident = %s"
+    sql = f"SELECT name, municipality FROM airport WHERE ident = '{icao}';"
     cursor = connection.cursor()
-    cursor.execute(sql, (icao,))
+    cursor.execute(sql)
     result = cursor.fetchone()
     if result:
         name, town = result
@@ -24,7 +24,5 @@ connection = mysql.connector.connect(
         autocommit=True
     )
 
-icao = input("Enter ICAO code: ").strip().upper()
+icao = input("Enter ICAO code: ")
 airport(icao)
-if connection.is_connected():
-    connection.close()
