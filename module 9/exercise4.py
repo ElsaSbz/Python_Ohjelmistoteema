@@ -10,8 +10,6 @@
 # Finally, the properties of each car are printed out formatted into a clear table.
 from random import randint
 
-import pandas as pd
-
 class cars:
     def __init__(self, registration_number, maximum_speed):
         self.registration_number = registration_number
@@ -41,12 +39,7 @@ while not race_over:
         if car.travelled_distance > 10000 :
             race_over = True
             break
-#print("registration_number current_speed travelled_distance maximum_speed ")
-#car_data =[]
-#for car in new_car:
-    #car_data.append([row[0], row[1], row[2], row[3], row[4]])
-    #print(car.registration_number , car.current_speed , car.travelled_distance , car.maximum_speed  )
-#df = pd.DataFrame(car_data, columns=['registration number', 'current speed', 'Cost','Range','Fuel'])
+
 print(f"{'Registration Number':<20}{'Max Speed (km/h)':<20}{'Current Speed (km/h)':<20}{'Travelled Distance (km)':<25}")
 print("=" * 85)
 for car in new_car:
