@@ -10,7 +10,7 @@
 # Finally, the properties of each car are printed out formatted into a clear table.
 from random import randint
 
-class cars:
+class Cars:
     def __init__(self, registration_number, maximum_speed):
         self.registration_number = registration_number
         self.maximum_speed = maximum_speed
