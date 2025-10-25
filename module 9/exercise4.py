@@ -10,7 +10,7 @@
 # Finally, the properties of each car are printed out formatted into a clear table.
 from random import randint
 
-class Cars:
+class Car:
     def __init__(self, registration_number, maximum_speed):
         self.registration_number = registration_number
         self.maximum_speed = maximum_speed
@@ -29,7 +29,7 @@ class Cars:
 
 new_car = []
 for i in range(1,11)  :
-    new_car.append (cars (f"ABC - {i}",randint(100,200)))
+    new_car.append (Car (f"ABC - {i}",randint(100,200)))
 
 race_over = False
 while not race_over:

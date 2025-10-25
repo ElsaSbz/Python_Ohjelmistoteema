@@ -8,7 +8,7 @@
 # Finally, use the emergency brake by forcing a -200 km/h change on the speed and then print out the final speed.
 # The travelled distance does not have to be updated yet.
 
-class car:
+class Car:
     def __init__(self, registration_number, maximum_speed):
         self.registration_number = registration_number
         self.maximum_speed = maximum_speed
@@ -22,7 +22,7 @@ class car:
             else :
                 print("Warning! Speed could not be changed!")
 
-new_car = car ("ABC-123",142)
+new_car = Car ("ABC-123",142)
 new_car.accelerate(30)
 new_car.accelerate(70)
 new_car.accelerate(50)
