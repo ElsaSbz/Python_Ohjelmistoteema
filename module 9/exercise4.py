@@ -25,7 +25,7 @@ class Car:
         else:
             self.current_speed = new_speed
     def drive(self, hours):
-        self.travelled_distance += self.current_speed * hours
+        self.travelled_distance += self.maximum_speed * hours
 
 new_car = []
 for i in range(1,11)  :
