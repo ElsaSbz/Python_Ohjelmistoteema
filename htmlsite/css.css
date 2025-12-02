@@ -1,0 +1,48 @@
+body {
+            font-family: "Brush Script MT" , "Brush Script MT", cursive;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #591202;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #C1C9D9;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            background-color: #C1C9D9;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #732E07;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
